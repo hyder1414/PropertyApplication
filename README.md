@@ -121,6 +121,4 @@ A deployment model shows the physical nodes (computer hardware) such as client a
 <img width="1011" alt="8" src="https://user-images.githubusercontent.com/34618387/92947966-5033f500-f41e-11ea-8774-cd59aad17145.png">
 
 
-<img width="750" alt="12" src="https://user-images.githubusercontent.com/34618387/92947958-4e6a3180-f41e-11ea-84bb-cae771b3403c.png">
-<img width="884" alt="13" src="https://user-images.githubusercontent.com/34618387/92947955-4dd19b00-f41e-11ea-8a9f-26d6c926a3e1.png">
-<img width="715" alt="14" src="https://user-images.githubusercontent.com/34618387/92947950-4c07d780-f41e-11ea-8a5f-f38c66bdf39f.png">
+
