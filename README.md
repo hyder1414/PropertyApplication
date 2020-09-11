@@ -1,4 +1,6 @@
-In this project we learn how to collect user stories, archetiect & design and built with agile SDLC methodologies. 
+# In this project we learn how to collect user stories, archetiect & design and built with agile SDLC methodologies.
+We describe a prototype implementation of the Real Estate Firm system. We describe the overall implementation plan, the prototype, testing, and user training. We use the use case diagram and the storyboard as a starting point to discuss the implementation plan.
+
 <img width="590" alt="1" s
 <img width="658" alt="2" src="https://user-images.githubusercontent.com/34618387/92947976-51652200-f41e-11ea-93e8-8e8f0cac116c.png">
 rc="https://user-images.githubusercontent.com/34618387/92947938-48745080-f41e-11ea-8aad-2dc2071d499a.png">
