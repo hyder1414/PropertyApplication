@@ -34,6 +34,10 @@ Use Case Model
 A use case model is a collection of related use case diagrams that capture the functions of a target firm in a hierarchical form. The firm has two types of workers—Manager and Employees. Employees perform the day to day activities and managers manage the sales office’s operations. Figure 1 shows the overall context of the real estate firm as a system. Managers and employees are modeled as actors that interact
 with the firm as a system. The context diagram has a single use case representing the whole system. The context diagram is expanded into the next level (level 0) of the use case diagram (UCD) detailing the functions contained inside the “Operate real Estate Firm” use case at the context level. Figure 2 shows the level 0 use case diagram for the firm. The level 0 UCD, as shown, contains four use cases. The number and type of the actors at level 0 are the same as that on the context diagram. Each level of use case diagrams must be consistent with the other levels. The use cases at level 0 are further detailed (expanded) at level 1. As an illustration, we show the expansion of only two use cases. The two use cases—Maintain Property and
 
+<img width="458" alt="7" src="https://user-images.githubusercontent.com/34618387/92947969-50cc8b80-f41e-11ea-9956-331da7ef206b.png">
+
+<img width="884" alt="13" src="https://user-images.githubusercontent.com/34618387/92947955-4dd19b00-f41e-11ea-8a9f-26d6c926a3e1.png">
+
 
 ## Data Objects in the Real Estate Firm
 A data object is an “entity”, whether real or abstract, one is interested in maintaining information about in order to operate the business effectively. These data objects relate to each other. For example, an employee manages a sale office. Here, “manages” relationship relates an employee to a sales office. Another relationship “Assigned To” shows which employee works for which sales office. The data objects and relationships have attributes.
@@ -113,12 +117,12 @@ All model related classes will be organized into a single, separate software mod
 This project doesn’t have any software classes to communicate with a third party system.
 ## Deployment Model
 A deployment model shows the physical nodes (computer hardware) such as client and server machines used to host the various components of an application (software system). The deployment model for the Real Estate Firm application is shown in figure 5. The application is a web-based application. The nodes communicate with each other on the Internet using TCP/IP protocols.
+<img width="750" alt="12" src="https://user-images.githubusercontent.com/34618387/92947958-4e6a3180-f41e-11ea-84bb-cae771b3403c.png">
 
 
 
-
-<img width="458" alt="7" src="https://user-images.githubusercontent.com/34618387/92947969-50cc8b80-f41e-11ea-9956-331da7ef206b.png">
 <img width="1011" alt="8" src="https://user-images.githubusercontent.com/34618387/92947966-5033f500-f41e-11ea-8774-cd59aad17145.png">
 
 
 
+<img width="715" alt="14" src="https://user-images.githubusercontent.com/34618387/92947950-4c07d780-f41e-11ea-8a5f-f38c66bdf39f.png">
