@@ -1,4 +1,5 @@
-# In this project we learn how to collect user stories, archetiect & design and built with agile SDLC methodologies.
+# Executive Summary
+# Introduction
 We describe a prototype implementation of the Real Estate Firm system. We describe the overall implementation plan, the prototype, testing, and user training. We use the use case diagram and the storyboard as a starting point to discuss the implementation plan.
 ## Business Activities of the Real Estate Firm
 Here, we identify the business activities of the firm and model the activities in the form of a use case model.
