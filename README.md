@@ -1,9 +1,18 @@
 # In this project we learn how to collect user stories, archetiect & design and built with agile SDLC methodologies.
 We describe a prototype implementation of the Real Estate Firm system. We describe the overall implementation plan, the prototype, testing, and user training. We use the use case diagram and the storyboard as a starting point to discuss the implementation plan.
+# Use Case Model
+Figure 1 shows the level 0 use case diagram for the system. The use case diagram contains five use cases that are accessible to users directly. These use cases are the basis for designing the menu bar of the system. The menu bar includes the following menu items:
+1. Home
+2. Property
+3. Owner
+4. Sales Office
+5. Employee
+6. Firm
+7. About
 
 <img width="590" alt="1" s
 <img width="658" alt="2" src="https://user-images.githubusercontent.com/34618387/92947976-51652200-f41e-11ea-93e8-8e8f0cac116c.png">
-rc="https://user-images.githubusercontent.com/34618387/92947938-48745080-f41e-11ea-8aad-2dc2071d499a.png">
+
 <img width="429" alt="3" src="https://user-images.githubusercontent.com/34618387/92947975-51652200-f41e-11ea-8cb0-3e934aa1c382.png">
 <img width="446" alt="4" src="https://user-images.githubusercontent.com/34618387/92947973-51652200-f41e-11ea-92f3-6f525b955bcf.png">
 <img width="432" alt="5" src="https://user-images.githubusercontent.com/34618387/92947972-50cc8b80-f41e-11ea-8abf-8a25e0266b86.png">
