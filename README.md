@@ -1,3 +1,5 @@
+![Alt Text](https://media.giphy.com/media/U6G1yDEwqTsEg8lNlB/giphy.gif)
+
 # Executive Summary
 # Introduction
 We describe a prototype implementation of the Real Estate Firm system. We describe the overall implementation plan, the prototype, testing, and user training. We use the use case diagram and the storyboard as a starting point to discuss the implementation plan.
