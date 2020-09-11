@@ -1,0 +1,113 @@
+<!doctype html>
+ <html>
+    <head>
+{% load static %}
+{# Load the tag library #}
+{% load bootstrap4 %}
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+
+	  <meta charset="utf-8">
+
+	</head>
+
+	<body>
+	<!-- Top menu -->
+ <h1 align='center' class='navbar-dark bg-primary' >Real Estate Firm System </h1>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Property
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/property_list">List</a>
+          <a class="dropdown-item" href="/property_create">Add</a>
+          <a class="dropdown-item" href="/property_search">Search</a>
+
+        </div>
+        <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Owner
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/owner_list">List</a>
+          <a class="dropdown-item" href="/owner_create">Add</a>
+          <a class="dropdown-item" href="/owner_search">Search</a>
+
+        </div>
+
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Employee
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/employee_list">List</a>
+          <a class="dropdown-item" href="/employee_create">Add</a>
+          <a class="dropdown-item" href="/employee_search">Search</a>
+
+        </div>
+
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Sale Office
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/office_list">List</a>
+          <a class="dropdown-item" href="/office_create">Add</a>
+          <a class="dropdown-item" href="/office_search">Search</a>
+
+        </div>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Firm</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About Us</a>
+      </li>
+
+     </ul>
+
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Register </button>
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Log In</button>
+    </form>
+
+  </div>
+</nav>
+<div class="container">
+<h1>
+	  {% block title %}
+	  {{ title| default:"Unitled Page" }}
+	  {% endblock title %}
+	</h1>
+	</div>
+<section id="main">
+	{% block content %}
+	<p>
+	Place holder text in base template. Replace with page content.
+	</p>
+	{% endblock content %}
+	</section>
+	<footer id="footer" class="page-footer font-small indigo pt-4" >Copyright &copy;
+	     <script type="text/Javascript">
+		    document.write(new Date().getFullYear());
+			</script> Real Estate App
+	 </footer>
+</body>
+</html>

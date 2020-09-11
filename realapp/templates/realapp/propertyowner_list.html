@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block title %} {{ title}} {% endblock title %}
+
+{%block content %}
+
+<table class="table" style="table-layout:fixed">
+<thead class="thead-light">
+<tr>
+<th> ID </th>
+<th> First Name </th>
+<th> Last Name</th>
+<th>Action</th>
+</tr>
+</thead>
+ 
+<tbody>
+{% for owner in object_list %}
+<tr>
+<td>{{owner.ownerid }}</td>
+ <td>{{owner.ownerfirstname}} </td>
+ <td>{{owner.ownerlastname}} </td>
+
+ <!--  -->
+ <td> <a class="btn btn-primary" href="{% url 'owner_detail' owner.ownerid %}" role="button">Details </a></td>
+  <td> <a class="btn btn-primary" href="{% url 'owner_update' owner.ownerid %}" role="button">Edit </a></td>
+ </tr>
+
+ {% endfor %}
+ </tbody>
+ </table>
+ {% endblock %}

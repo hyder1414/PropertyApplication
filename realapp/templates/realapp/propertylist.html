@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% block title %} {{ title}} {% endblock title %}
+
+{%block content %}
+
+<table class="table" style="table-layout:fixed">
+<thead class="thead-light">
+<tr>
+<th> ID </th>
+<th> Address </th>
+<th> City </th>
+<th> State </th>
+<th> Zip Code </th>
+<th> Listing Date </th>
+<th> Sold Date </th>
+<th> Sale Price </th>
+<th> Office ID </th>
+<th> Action </th>
+</tr>
+</thead>
+ 
+<tbody>
+{% for onelist in propertylist %}
+<tr>
+<td>{{onelist.propertyid }}</td>
+ <td>{{onelist.propaddress}} </td>
+ <td>{{onelist.propcity}} </td>
+ <td>{{onelist.propstate}}</td>
+ <td>{{onelist.propzip }}</td>
+ <td>{{onelist.listingdate }}</td>
+   <td>{{onelist.solddate}} </td>
+    <td>{{onelist.saleprice }}</td>
+ <td>{{onelist.officeid.officeid }}</td>
+ <!--  -->
+ <td> <a class="btn btn-primary" href="/property_detail/{{onelist.propertyid}}" role="button">Details </a></td>
+  <td> <a class="btn btn-primary" href="/property/{{onelist.propertyid}}/update/" role="button">Edit </a></td>
+ </tr>
+
+ {% endfor %}
+ </tbody>
+ </table>
+ {% endblock %}

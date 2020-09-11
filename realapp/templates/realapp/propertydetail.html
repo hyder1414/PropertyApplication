@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %} {{ title}} {% endblock title %}
+
+{%block content %}
+
+
+<table class="table" style="table-layout:fixed">
+<thead class="thead-light">
+<tr>
+<th> ID </th>
+<th> Address </th>
+<th> City </th>
+<th> State </th>
+<th> Zip Code </th>
+<th> Listing Date </th>
+<th> Sold Date </th>
+<th> Sale Price </th>
+<th> Office ID </th>
+
+</tr>
+</thead>
+ 
+<tbody>
+ 
+<tr>
+<td>{{propertydetail.propertyid }}</td>
+ <td>{{propertydetail.propaddress}} </td>
+ <td>{{propertydetail.propcity}} </td>
+ <td>{{propertydetail.propstate}}</td>
+ <td>{{propertydetail.propzip }}</td>
+ <td>{{propertydetail.listingdate }}</td>
+   <td>{{propertydetail.solddate}} </td>
+    <td>{{propertydetail.saleprice }}</td>
+ <td>{{propertydetail.officeid.officeid }}</td>
+ </tr>
+
+  
+ </tbody>
+ </table>
+ {% endblock %}

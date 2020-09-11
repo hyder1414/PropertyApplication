@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block title %} {{ title}} {% endblock title %}
+
+{%block content %}
+
+<h1>   Property Search</h1>
+  
+   <form method="GET" action="">
+   <input type='text' name='zipcode' placeholder='search'>
+	   </form>
+       <br>
+       <br>
+	<h3> Search Results: </h3>  
+    {% for object in object_list %}
+     <p> {{object.propaddress}}, {{object.propcity}} </p>
+     {% endfor %}
+ {% endblock content%}

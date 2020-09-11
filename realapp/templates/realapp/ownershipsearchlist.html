@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% block title %} {{ title}} {% endblock title %}
+
+{%block content %}
+<div class="container">
+<h1>   Property Search</h1>
+  
+   <form method="GET" action="">
+    <label> Enter a Zipcode: </label>
+   <input type='text' name='zipcode' placeholder='search'>
+    <button type="submit" class="btn btn-default">Search</button>
+	   </form>
+       <br>
+       <br>
+	<h3> Search Results: </h3>  
+    </div>
+    <div class="container">
+     <table class="table">
+      <thead>
+      <tr>
+        <th> Seq # </th>
+       <th> Property ID </th>
+         <th> Address </th>
+           <th> City </th>
+             <th> zip code </th>
+              <th> Sold Date </th>
+               <th> Percent Owned </th>
+             <th> Owner First Name </th>
+             <th> Owner Last Name </th>
+             
+             </tr>
+        </thead>
+<tbody>        
+    {% for object in object_list %}
+       <tr>
+       <td> {{forloop.counter}} </td>
+      <td> {{object.propertyid}} </td>
+      <td> {{object.propertyid__propaddress}} </td>
+      <td> {{object.propertyid__propcity}} </td>
+      <td> {{object.propertyid__propzip}} </td>
+        <td> {{object.propertyid__solddate}} </td>
+        <td> {{object.percentowned}} </td>
+      <td> {{object.ownerid__ownerfirstname}} </td>
+      <td> {{object.ownerid__ownerlastname}} </td>
+     
+     </tr>
+     </tbody>
+     
+     {% endfor %}
+   </table>
+   </div>
+ {% endblock content%}

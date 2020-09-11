@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+<h1 style="text-align:center">
+{{ title}}
+</h1>
+<br>
+{% endblock title %}
+{%block content %}
+<p >
+<h5 style="text-align:center"> This is a Real Estate Firm specializing in helping real estate property owners list and sell their properties. </h5>
+<br>
+{% load static %}
+   <img src="{% static "realapp/images/realestatehomeimg.png" %}" class="mx-auto d-block" alt="my image" />
+
+ </p>
+{% endblock content %}
