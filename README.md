@@ -55,12 +55,72 @@ them and all the identified functions in the case must have the data objects nee
 
 
 
+## Storyboard
+The figure 4 shows the storyboard for the real estate firm. Each node in the storyboard represents a webpage (screen). The storyboard shows what webpages are navigable from a given webpage.
+<img width="965" alt="9" src="https://user-images.githubusercontent.com/34618387/92947965-5033f500-f41e-11ea-99a8-4aa42ae93c7a.png">
+
+
+
+## System Component Design for the Real Estate Firm
+An Illustration (incomplete)
+Introduction
+The system (subsystem) internal design for the Real Estate Firm application is presented here. The system internal design shows the internal interactions, i.e., what (software) classes exist in the subsystem component and how do they collaborate to support responsibilities (use cases) documented through the UI objects. The next section shows the use case realizations using the Model-View-Controller pattern. We show the interactions among various classes using a sequence diagram for each use case (system function). We also develop a design class diagram showing the software classes and their interdependencies.
+(Please note that this illustration shows the realization of only three use cases.)
+Use Case Realization
+As shown in the menu bar, the following use cases are available to users. 1. Maintain Property
+2. Maintain Owner
+3. Maintain Employee
+4. Manage Sales Office
+5. Maintain Firm.
+The menu bar lists the use cases as menu choices. The following use cases are realized:
+1. Maintain Owner (referred to as Owner in the menu bar). When clicked on this menu choice, it displays a list of owners. So, it’s equivalent to the use case “List Properties”.
+2. Maintain Property (referred to as Property in the menu bar). This is the same as “List Properties.”
+3. Manage Sales Office (referred to as Sales Office in the menu bar). This is the same as “List Sales Offices.”
+Figures 1, 2, and 3 show the use case realization of Owner and Property and Sale Office respectively. Figure one shows the interaction among four objects—HomePage, OwnerController, OwnerModel and OwnerView. The interaction for other actions on an owner—Edit, Detail, and Delete are not shown.
+<img width="753" alt="10" src="https://user-images.githubusercontent.com/34618387/92947963-4f9b5e80-f41e-11ea-85e1-05cc4ad68a17.png">
+
+
+
+
+## Design Class Diagram
+Figure 4 shows a deign class diagram that includes software classes and their interdependencies. The software classes and their dependencies are derived directly from the sequence diagrams.
+<img width="761" alt="11" src="https://user-images.githubusercontent.com/34618387/92947961-4f02c800-f41e-11ea-9963-2def9181375a.png">
+
+
+
+
+
+## System Component--Internal Structure
+Design subsystems (subcomponents) are used to organize related software classes into groups. We can organize software classes based upon view, functionality, or any other basis that provides a good overall architecture of the system. Here, we will divide our software classes into three subsystems--Views (presentation layer (UI) subsystem), Controllers (business layer control classes), and Models (data access layer and Business logic software classes). These subsystems are described below. Refer to the design class diagram in figure 4 for an overall set of software classes to be organized into components.
+### Views
+All software classes dealing with UI are grouped together as Views. Based upon the use case realizations, we have the following UI related classes:
+1. OwnerView
+2. PropertyView
+3. SalesOfficeView
+All UI related classes will be organized into a single software module.
+### Controllers
+This subsystem contains software classes needed to implement the coordination between Views and Models. The controller classes are:
+1. OwnerController
+2. PropertyController
+3. SalesOfficeController
+All controller related classes will be organized into a single, separate software module.
+### Models
+This subsystem contains software classes to implement data access and business logic. The model classes are:
+1. OwnerModel
+2. PropertyModel
+3. SalesOfficeModel
+All model related classes will be organized into a single, separate software module.
+This project doesn’t have any software classes to communicate with a third party system.
+## Deployment Model
+A deployment model shows the physical nodes (computer hardware) such as client and server machines used to host the various components of an application (software system). The deployment model for the Real Estate Firm application is shown in figure 5. The application is a web-based application. The nodes communicate with each other on the Internet using TCP/IP protocols.
+
+
+
 
 <img width="458" alt="7" src="https://user-images.githubusercontent.com/34618387/92947969-50cc8b80-f41e-11ea-9956-331da7ef206b.png">
 <img width="1011" alt="8" src="https://user-images.githubusercontent.com/34618387/92947966-5033f500-f41e-11ea-8774-cd59aad17145.png">
-<img width="965" alt="9" src="https://user-images.githubusercontent.com/34618387/92947965-5033f500-f41e-11ea-99a8-4aa42ae93c7a.png">
-<img width="753" alt="10" src="https://user-images.githubusercontent.com/34618387/92947963-4f9b5e80-f41e-11ea-85e1-05cc4ad68a17.png">
-<img width="761" alt="11" src="https://user-images.githubusercontent.com/34618387/92947961-4f02c800-f41e-11ea-9963-2def9181375a.png">
+
+
 <img width="750" alt="12" src="https://user-images.githubusercontent.com/34618387/92947958-4e6a3180-f41e-11ea-84bb-cae771b3403c.png">
 <img width="884" alt="13" src="https://user-images.githubusercontent.com/34618387/92947955-4dd19b00-f41e-11ea-8a9f-26d6c926a3e1.png">
 <img width="715" alt="14" src="https://user-images.githubusercontent.com/34618387/92947950-4c07d780-f41e-11ea-8a5f-f38c66bdf39f.png">
