@@ -1,16 +1,35 @@
 # In this project we learn how to collect user stories, archetiect & design and built with agile SDLC methodologies.
 We describe a prototype implementation of the Real Estate Firm system. We describe the overall implementation plan, the prototype, testing, and user training. We use the use case diagram and the storyboard as a starting point to discuss the implementation plan.
-# Use Case Model
-Figure 1 shows the level 0 use case diagram for the system. The use case diagram contains five use cases that are accessible to users directly. These use cases are the basis for designing the menu bar of the system. The menu bar includes the following menu items:
-1. Home
-2. Property
-3. Owner
-4. Sales Office
-5. Employee
-6. Firm
-7. About
-
+## Business Activities of the Real Estate Firm
+Here, we identify the business activities of the firm and model the activities in the form of a use case model.
+Based upon the description of the firm, the major activities/sub activities are:
+1. List properties for sale.
+a. Add a new property
+b. Update an existing property
+c. Display a list of properties
+d. Remove an existing property
+2. Maintain owners.
+a. Add a new owner
+b. Update an existing Owner
+c. Remove an existing owner
+d. Search owner properties
+3. Manage sales offices.
+a. Add a new sales office
+b. Change an existing sales office
+c. Remove an existing sales office
+d. Monitor sales office
+4. Maintain Employees.
+a. Add a new employee
+b. Update an existing employee
+c. Remove an employee
+Function Model
+We develop a use case model as a function model to show the functions of the firm as a system.
+Use Case Model
 <img width="590" alt="1" s
+A use case model is a collection of related use case diagrams that capture the functions of a target firm in a hierarchical form. The firm has two types of workers—Manager and Employees. Employees perform the day to day activities and managers manage the sales office’s operations. Figure 1 shows the overall context of the real estate firm as a system. Managers and employees are modeled as actors that interact
+with the firm as a system. The context diagram has a single use case representing the whole system. The context diagram is expanded into the next level (level 0) of the use case diagram (UCD) detailing the functions contained inside the “Operate real Estate Firm” use case at the context level. Figure 2 shows the level 0 use case diagram for the firm. The level 0 UCD, as shown, contains four use cases. The number and type of the actors at level 0 are the same as that on the context diagram. Each level of use case diagrams must be consistent with the other levels. The use cases at level 0 are further detailed (expanded) at level 1. As an illustration, we show the expansion of only two use cases. The two use cases—Maintain Property and
+
+
 <img width="658" alt="2" src="https://user-images.githubusercontent.com/34618387/92947976-51652200-f41e-11ea-93e8-8e8f0cac116c.png">
 
 <img width="429" alt="3" src="https://user-images.githubusercontent.com/34618387/92947975-51652200-f41e-11ea-8cb0-3e934aa1c382.png">
